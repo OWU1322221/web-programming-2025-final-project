@@ -219,7 +219,7 @@ if 'Year' in df.columns and 'Rank' in df.columns and 'Character' in df.columns:
         
         # 画像とプロフィールを表示
         if selected_character in character_info:
-            st.sidebar.image(character_info[selected_character]["image"], use_column_width=True)
+            st.sidebar.image(character_info[selected_character]["image"], use_container_width=True)
             st.sidebar.write(f"**紹介:** {character_info[selected_character]['introduction']}")
             
             # キャラクターからの一言を表示（枠で囲む）
